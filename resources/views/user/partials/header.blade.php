@@ -10,13 +10,13 @@
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="#welcome" class="active">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#product">Products</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#client">Clients</a></li>
-                        <li><a href="#contact-us">Contact Us</a></li>
+                        <li><a href="/#welcome">Home</a></li>
+                        <li><a href="/#product">Products</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#testimonials">Testimonials</a></li>
+                        <li><a href="/#client">Clients</a></li>
+                        <li><a href="/#contact">Contact Us</a></li>
+                        <li><a href="/about">About</a></li>
                     </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>

@@ -1,4 +1,4 @@
-<section class="section colored" id="contact-us">
+<section class="section colored" id="contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">

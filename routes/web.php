@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\ContactController;
+use App\Http\Controllers\Admin\SettingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('user.welcome');
+});
+
+Route::get('/about', function () {
+    return view('user.about');
+})->name('about');
+
+Route::prefix('admin')->group(function () {
+    Route::resource('/contact', ContactController::class);
+    Route::resource('/setting', SettingController::class);
 });
