@@ -1,3 +1,4 @@
+@inject('setting', 'App\Models\Setting')
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +10,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
 
-    <title>Crystal Group</title>
+    <title>{{ $setting->get('site_name') }}</title>
 
     <link rel="stylesheet" type="text/css" href="{{ asset('user/assets/css/bootstrap.min.css') }}">
 
@@ -23,15 +24,15 @@
 
 <body>
 
-    @include('user.partials.loader')
+    @include('user.layout.loader')
 
     <!-- ***** Header Area End ***** -->
-    @include('user.partials.header')
+    @include('user.layout.header')
 
     @stack('main')
 
     <!-- ***** Footer Section ***** -->
-    @include('user.partials.footer')
+    @include('user.layout.footer')
 
     <!-- jQuery -->
     <script src="{{ asset('user/assets/js/jquery-2.1.0.min.js') }}"></script>

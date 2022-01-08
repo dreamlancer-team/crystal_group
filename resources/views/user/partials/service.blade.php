@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="offset-lg-3 col-lg-6">
                     <div class="info">
-                        <h1>Work Process</h1>
+                        <h1>Types of Concrete</h1>
                         <p>Aenean nec tempor metus. Maecenas ligula dolor, commodo in imperdiet interdum, vehicula ut ex. Donec ante diam.</p>
                     </div>
                 </div>

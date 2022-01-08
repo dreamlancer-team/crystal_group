@@ -1,3 +1,5 @@
+@inject('setting', 'App\Models\Setting')
+
 <section class="section colored" id="contact">
     <div class="container">
         <div class="row">
@@ -17,16 +19,13 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <h5 class="margin-bottom-30">Keep in touch</h5>
                 <div class="contact-text">
-                    <p>110-220 Quisque diam odio, maximus ac consectetur eu, 10260
-                    <br>auctor non lorem</p>
+                    <p>{{ $setting->get('address') }}</p>
 
                     <h6 class="margin-bottom-15">Send Us Your Query Anytime!</h6>
-                    <p>Email : <a href="mailto:care@crystalgroup.in">care@crystalgroup.in</a></p>   
+                    <p>Email : <a href="mailto:{{ $setting->get('email') }}">{{ $setting->get('email') }}</a></p>   
                     <h6 class="margin-bottom-15">Phone Numbers</h6>   
                     <ul>
-                      <li><a href="tel:+91">+91 9876543210</a></li>
-                      <li><a href="tel:+91">+91 9876543210</a></li>
-                      <li><a href="tel:+91">+91 9876543210</a></li>
+                      <li><a href="tel:+91{{ $setting->get('mobile') }}">+91 {{ $setting->get('mobile') }}</a></li>
                     </ul>  
                 </div>             
             </div>
