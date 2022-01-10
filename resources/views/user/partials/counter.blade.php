@@ -4,13 +4,13 @@
             <div class="row">
                 <div class="col-lg-3 offset-lg-3 col-md-6 col-sm-12">
                     <div class="count-item decoration-bottom">
-                        <strong>126</strong>
+                        <strong>{{ $item->get('total_project') }}</strong>
                         <span>Projects</span>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="count-item">
-                        <strong>27</strong>
+                        <strong>{{ $item->get('happy_client') }}</strong>
                         <span>Happy Client</span>
                     </div>
                 </div>

@@ -1,4 +1,6 @@
 @extends('user.layout.app')
+
+@inject('item', 'App\Models\Common')
     
     @push('main')
     
@@ -22,7 +24,7 @@
                         <h2 class="section-title">Let’s discuss about you project</h2>
                     </div>
                     <div class="left-text">
-                        <p>Nullam sit amet purus libero. Etiam ullamcorper nisl ut augue blandit, at finibus leo efficitur. Nam gravida purus non sapien auctor, ut aliquam magna ullamcorper.</p>
+                        <p>{{ $item->get('feature_1') }}</p>
                     </div>
                 </div>
             </div>
@@ -44,7 +46,7 @@
                         <h2 class="section-title">We can help you to grow your business</h2>
                     </div>
                     <div class="left-text">
-                        <p>Aenean pretium, ipsum et porttitor auctor, metus ipsum iaculis nisi, a bibendum lectus libero vitae urna. Sed id leo eu dolor luctus congue sed eget ipsum. Nunc nec luctus libero. Etiam quis dolor elit.</p>
+                        <p>{{ $item->get('feature_2') }}</p>
                     </div>
                 </div>
                 <div class="col-lg-1"></div>
@@ -60,7 +62,7 @@
     @include('user.partials.service')  
 
     <!-- ***** Testimonials Section ***** -->
-    @include('user.partials.testimonials')  
+    {{-- @include('user.partials.testimonials')   --}}
 
     <!-- ***** Client Section ***** -->
     @include('user.partials.client')
@@ -70,6 +72,9 @@
 
     <!-- ***** About Section ***** -->
     @include('user.partials.about')  
+   
+    <!-- ***** Gallary Section ***** -->
+    {{-- @include('user.partials.gallary')   --}}
 
     <!-- ***** Contact Us Section ***** -->
     @include('user.partials.contact')  

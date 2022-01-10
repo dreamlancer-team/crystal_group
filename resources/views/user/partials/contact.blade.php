@@ -16,8 +16,8 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <h5 class="margin-bottom-30">Keep in touch</h5>
+            <div class="col-lg-4 col-md-6 col-sm-12 margin-bottom-30">
+                <h5 class="margin-bottom-10">Keep in touch</h5>
                 <div class="contact-text">
                     <p>{{ $setting->get('address') }}</p>
 
@@ -30,9 +30,12 @@
                 </div>             
             </div>
 
+            <div></div>
+
             <div class="col-lg-8 col-md-6 col-sm-12">
                 <div class="contact-form">
-                    <form id="contact" action="" method="get">
+                    <form id="contact" action="{{ route('mail.send') }}" method="post">
+                      @csrf
                       <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
                           <fieldset>
@@ -48,7 +51,7 @@
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12">
                           <fieldset>
-                            <input name="phone" type="number" class="form-control" placeholder="Phone Number" required="">
+                            <input name="mobile" type="number" class="form-control" placeholder="Phone Number" required="">
                           </fieldset>
                         </div>
                         <div class="col-lg-12">

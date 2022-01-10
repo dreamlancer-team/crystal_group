@@ -3,41 +3,36 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\UpdateSettingRequest;
 use App\Models\Setting;
+use Illuminate\Http\Request;
 
 class SettingController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         return view('admin.setting.index');
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Setting  $setting
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Setting $setting)
+    public function general(Request $request)
     {
-        //
+        Setting::set('site_name', $request->site_name);
+        Setting::set('footer_text', $request->footer_text);
+        return redirect()->route('setting');
+    }
+    public function address(Request $request)
+    {
+        Setting::set('address', $request->address);
+        Setting::set('email', $request->email);
+        Setting::set('mobile', $request->mobile);
+        return redirect()->route('setting');
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\UpdateSettingRequest  $request
-     * @param  \App\Models\Setting  $setting
-     * @return \Illuminate\Http\Response
-     */
-    public function update(UpdateSettingRequest $request, Setting $setting)
+    public function social(Request $request)
     {
-        //
+        Setting::set('instagram', $request->instagram);
+        Setting::set('facebook', $request->facebook);
+        Setting::set('twitter', $request->twitter);
+        Setting::set('linkedin', $request->linkedin);
+        return redirect()->route('setting');
     }
 }

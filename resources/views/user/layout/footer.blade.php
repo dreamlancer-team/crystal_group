@@ -20,7 +20,7 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <p class="copyright">{{ $setting->get('footer_text') }} - Design: <a href="http://dreamlancer.in/">Dreamlancer</a></p>
+                <p class="copyright">{{ $setting->get('footer_text') }} - Design By: <a href="http://dreamlancer.in/">Dreamlancer</a></p>
             </div>
         </div>
     </div>

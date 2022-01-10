@@ -8,7 +8,7 @@
             </div>
             <div class="offset-lg-3 col-lg-6">
                 <div class="center-text">
-                    <p>Donec vulputate urna sed rutrum venenatis. Cras consequat magna quis arcu elementum, quis congue risus volutpat.</p>
+                    <p>Our clients come first at Crystal Group, and we are proud to work with some of the best know brands.</p>
                 </div>
             </div>
         </div>

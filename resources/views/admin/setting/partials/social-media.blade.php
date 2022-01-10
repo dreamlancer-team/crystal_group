@@ -1,5 +1,6 @@
 <div class="tab-pane fade" id="social-media" role="tabpanel" aria-labelledby="social-media-tab">
-    <form action="" method="post">
+    <form action="{{ route('setting.social') }}" method="post">
+        @csrf
         <div class="mb-3">
             <label>Instagram</label>
             <input class="form-control form-control-solid" value="{{ $setting->get('instagram') }}" name="instagram" type="text" placeholder="https://www.instagram.com/...">

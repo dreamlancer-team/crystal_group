@@ -1429,6 +1429,7 @@ blog
     border-radius: 20px;
     position: relative;
     height: 200px;
+    object-fit: fill;
 }
 
 .blog-post-thumb .blog-content {
