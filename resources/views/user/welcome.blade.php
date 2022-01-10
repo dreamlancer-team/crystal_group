@@ -69,12 +69,13 @@
 
     <!-- ***** Counter Parallax Start ***** -->
     @include('user.partials.counter')    
+   
+    <!-- ***** Gallary Section ***** -->
+    @include('user.partials.gallary')  
 
     <!-- ***** About Section ***** -->
     @include('user.partials.about')  
    
-    <!-- ***** Gallary Section ***** -->
-    {{-- @include('user.partials.gallary')   --}}
 
     <!-- ***** Contact Us Section ***** -->
     @include('user.partials.contact')  

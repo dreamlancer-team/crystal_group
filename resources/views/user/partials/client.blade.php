@@ -1,4 +1,4 @@
-<section class="section colored" id="client">
+<section class="section" id="client">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -14,12 +14,16 @@
         </div>
 
         <div class="row">
-            <img class="img-fluid mr-3" src="user/assets/images/blog-item-01.png" style="height: 85px; width:150px" alt="client">
-            <img class="img-fluid mr-3" src="user/assets/images/blog-item-01.png" style="height: 85px; width:150px" alt="client">
-            <img class="img-fluid mr-3" src="user/assets/images/blog-item-01.png" style="height: 85px; width:150px" alt="client">
-            <img class="img-fluid mr-3" src="user/assets/images/blog-item-01.png" style="height: 85px; width:150px" alt="client">
-            <img class="img-fluid mr-3" src="user/assets/images/blog-item-01.png" style="height: 85px; width:150px" alt="client">
-            <img class="img-fluid mr-3" src="user/assets/images/blog-item-01.png" style="height: 85px; width:150px" alt="client">
+            <img class="img-fluid m-3" src="user/assets/images/client/client_1.jpg" style="height: 125px; width:150px" alt="client">
+            <img class="img-fluid m-3" src="user/assets/images/client/client_2.jpg" style="height: 125px; width:150px" alt="client">
+            <img class="img-fluid m-3" src="user/assets/images/client/client_3.jpg" style="height: 125px; width:150px; object-fit: cover" alt="client">
+            <img class="img-fluid m-3" src="user/assets/images/client/client_4.png" style="height: 125px; width:150px" alt="client">
+            <img class="img-fluid m-3" src="user/assets/images/client/client_5.jpg" style="height: 125px; width:150px" alt="client">
+            <img class="img-fluid m-3" src="user/assets/images/client/client_6.jpg" style="height: 125px; width:150px" alt="client">
+            <img class="img-fluid m-3" src="user/assets/images/client/client_7.jpg" style="height: 125px; width:150px" alt="client">
+            <img class="img-fluid m-3" src="user/assets/images/client/client_8.png" style="height: 125px; width:150px" alt="client">
+            <img class="img-fluid m-3" src="user/assets/images/client/client_9.jpg" style="height: 125px; width:150px" alt="client">
          </div>
+         
     </div>
 </section>
