@@ -10,7 +10,7 @@
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="/#welcome">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="/#product">Products</a></li>
                         <li><a href="/#services">Services</a></li>
                         <li><a href="/#testimonials">Testimonials</a></li>
