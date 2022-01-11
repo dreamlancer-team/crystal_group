@@ -1,4 +1,4 @@
-<section class="mini" id="services">
+<section class="mini">
     <div class="mini-content">
         <div class="container">
             <div class="row">

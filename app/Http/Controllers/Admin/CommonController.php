@@ -29,6 +29,7 @@ class CommonController extends Controller
         Common::set('welcome_caption', $request->welcome_caption);
         Common::set('feature_1', $request->feature_1);
         Common::set('feature_2', $request->feature_2);
+        Common::set('services', $request->services);
         Common::set('total_project', $request->total_project);
         Common::set('happy_client', $request->happy_client);
         return redirect()->route('general');

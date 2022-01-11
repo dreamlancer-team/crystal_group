@@ -25,6 +25,10 @@
                 <input class="form-control form-control-solid" value="{{ $item->get('feature_2') }}" name="feature_2" type="text" placeholder="Enter feature caption 2">
             </div>
             <div class="mb-3">
+                <label>Services</label>
+                <input class="form-control form-control-solid" value="{{ $item->get('services') }}" name="services" type="text" placeholder="Enter services">
+            </div>
+            <div class="mb-3">
                 <label>Total Project</label>
                 <input class="form-control form-control-solid" value="{{ $item->get('total_project') }}" name="total_project" type="number" placeholder="Enter total project">
             </div>

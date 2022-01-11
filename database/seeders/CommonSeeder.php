@@ -14,6 +14,10 @@ class CommonSeeder extends Seeder
             'value' => '',
         ],
         [
+            'key' => 'services',
+            'value' => '',
+        ],
+        [
             'key' => 'welcome_title',
             'value' => 'We provide the best strategy to grow up your business',
         ],

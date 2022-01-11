@@ -54,7 +54,10 @@
     <!-- ***** Features Big Item End ***** -->
 
     <!-- ***** Service Section ***** -->
-    @include('user.partials.service')  
+    @include('user.partials.types')  
+
+    <!-- ***** Service Section ***** -->
+    @include('user.partials.services')  
 
     <!-- ***** Testimonials Section ***** -->
     {{-- @include('user.partials.testimonials')   --}}
