@@ -17,14 +17,14 @@ class SettingController extends Controller
     {
         Setting::set('site_name', $request->site_name);
         Setting::set('footer_text', $request->footer_text);
-        return redirect()->route('setting');
+        return back();
     }
     public function address(Request $request)
     {
         Setting::set('address', $request->address);
         Setting::set('email', $request->email);
         Setting::set('mobile', $request->mobile);
-        return redirect()->route('setting');
+        return back();
     }
 
     public function social(Request $request)
@@ -33,6 +33,6 @@ class SettingController extends Controller
         Setting::set('facebook', $request->facebook);
         Setting::set('twitter', $request->twitter);
         Setting::set('linkedin', $request->linkedin);
-        return redirect()->route('setting');
+        return back();
     }
 }

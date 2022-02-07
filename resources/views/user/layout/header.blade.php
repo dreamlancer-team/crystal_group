@@ -4,7 +4,7 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <a href="/" class="logo">
-                        <img src="user/assets/images/logo.jpeg" style="width: 150px; height:75px; margin-top:-23px" alt="logo"/>
+                        <img src="user/assets/images/logo.jpeg" style="width: 250px; height:76px; margin-top:-23px" alt="logo"/>
                     </a>
                     <ul class="nav">
                         <li><a href="/">Home</a></li>

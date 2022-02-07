@@ -14,7 +14,7 @@
     </li>
     
     <li class="nav-item">
-        <a class="nav-link" href="/admin/profile">Profile</a>
+        <a class="nav-link" href="/admin/about">About</a>
     </li>
     
     <li class="nav-item">

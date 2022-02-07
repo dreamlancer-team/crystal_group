@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 class CommonController extends Controller
 {
     /**
-     * Display a profile resource.
+     * Display a about resource.
      *
      * @return \Illuminate\Http\Response
      */

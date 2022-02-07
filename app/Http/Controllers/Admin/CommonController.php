@@ -36,26 +36,26 @@ class CommonController extends Controller
     }
 
     /**
-     * Display a profile resource.
+     * Display a about resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function profile()
+    public function about()
     {
         $about_text = Common::where('key', 'about_text')->value('value');
-        return view('admin.profile.index', compact('about_text'));
+        return view('admin.about.index', compact('about_text'));
     }
 
     /**
-     * Create a profile resource.
+     * Create a about resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function createProfile(Request $request, Common $common)
+    public function createabout(Request $request, Common $common)
     {
         Common::where('key', 'about_text')->update([
             'value' => $request->about_text
         ]);
-        return redirect()->route('profile');
+        return redirect()->route('about');
     }
 }

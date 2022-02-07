@@ -4,7 +4,7 @@
     <div class="card col-md-8 offset-md-2">
         <div class="card-header">About</div>
         <div class="card-body">
-           <form action="{{ route('profile.create') }}" method="post">
+           <form action="{{ route('about.create') }}" method="post">
             @csrf
             <div class="mb-3">
                 <textarea id="editor" class="form-control" name="about_text" rows="10" placeholder="Enter about us . . .">{{ $about_text }}</textarea>
