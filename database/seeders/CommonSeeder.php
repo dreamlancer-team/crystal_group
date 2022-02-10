@@ -23,15 +23,15 @@ class CommonSeeder extends Seeder
         ],
         [
             'key' => 'welcome_caption',
-            'value' => '',
+            'value' => 'Pune\'s leading supplier of quality ready mixed concrete.',
         ],
         [
             'key' => 'feature_1',
-            'value' => '',
+            'value' => 'Nullam sit amet purus libero. Etiam ullamcorper nisl ut augue blandit, at finibus leo efficitur. Nam gravida purus non sapien auctor, ut aliquam magna ullamcorper.',
         ],
         [
             'key' => 'feature_2',
-            'value' => '',
+            'value' => 'Aenean pretium, ipsum et porttitor auctor, metus ipsum iaculis nisi, a bibendum lectus libero vitae urna. Sed id leo eu dolor luctus congue sed eget ipsum. Nunc nec luctus libero. Etiam quis dolor elit.',
         ],
         [
             'key' => 'total_project',

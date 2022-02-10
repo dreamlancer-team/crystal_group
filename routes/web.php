@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\CommonController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\SettingController;
+use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\User\CommonController as UserCommonController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,10 +22,19 @@ Route::get('/', [UserCommonController::class, 'index']);
 Route::post('/', [ContactController::class, 'send'])->name('mail.send');
 
 Route::prefix('/admin')->middleware(['auth'])->group(function () {
+
+    /// General Info
     Route::get('/general', [CommonController::class, 'general'])->name('general');
     Route::post('/general', [CommonController::class, 'store'])->name('general.store');
+
+    /// About 
     Route::get('/about', [CommonController::class, 'about'])->name('about');
     Route::post('/about', [CommonController::class, 'createabout'])->name('about.create');
+
+    /// Image Slider
+    Route::resource('/slider', SliderController::class);
+
+    /// Site Setting
     Route::get('/setting', [SettingController::class, 'index'])->name('setting');
     Route::post('/setting/general', [SettingController::class, 'general'])->name('setting.general');
     Route::post('/setting/address', [SettingController::class, 'address'])->name('setting.address');

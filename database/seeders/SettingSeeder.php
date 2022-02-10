@@ -14,7 +14,7 @@ class SettingSeeder extends Seeder
         ],
         [
             'key' => 'site_logo',
-            'value' => ''
+            'value' => 'user/images/logo.jpeg'
         ],
         [
             'key' => 'footer_text',
@@ -33,7 +33,7 @@ class SettingSeeder extends Seeder
             'value' => ''
         ],
         [
-            'key' => 'likedin',
+            'key' => 'linkedIn',
             'value' => ''
         ],
         [
@@ -42,7 +42,7 @@ class SettingSeeder extends Seeder
         ],
         [
             'key' => 'email',
-            'value' => 'care@crystalgroup.in'
+            'value' => 'care@crystal-group.in'
         ],
         [
             'key' => 'mobile',

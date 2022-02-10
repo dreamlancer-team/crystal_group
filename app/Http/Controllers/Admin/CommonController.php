@@ -32,7 +32,7 @@ class CommonController extends Controller
         Common::set('services', $request->services);
         Common::set('total_project', $request->total_project);
         Common::set('happy_client', $request->happy_client);
-        return redirect()->route('general');
+        return back();
     }
 
     /**

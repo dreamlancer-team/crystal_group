@@ -33,6 +33,6 @@
     @include('user.partials.about')  
    
     <!-- ***** Contact Us Section ***** -->
-    @include('user.partials.contact')  
-    
+    @include('user.partials.contact') 
+        
     @endpush

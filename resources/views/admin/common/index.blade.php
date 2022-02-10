@@ -4,7 +4,7 @@
 
 @push('main')
     <div class="card col-md-8 offset-md-2">
-        <div class="card-header">About</div>
+        <div class="card-header">General Info</div>
         <div class="card-body">
            <form action="{{ route('general.store') }}" method="post">
             @csrf
