@@ -15,17 +15,8 @@ class SliderController extends Controller
      */
     public function index()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+        $sliders = Slider::all();
+        return view('admin.slider.index', compact('sliders'));
     }
 
     /**
@@ -36,41 +27,17 @@ class SliderController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        $request->validate([
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Slider  $slider
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Slider $slider)
-    {
-        //
-    }
+        $imageName = time() . '.' . $request->image->extension();
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Slider  $slider
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Slider $slider)
-    {
-        //
-    }
+        $request->image->move(public_path('images/slider'), $imageName);
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Slider  $slider
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Slider $slider)
-    {
-        //
+        Slider::create(['url' => $imageName]);
+
+        return back();
     }
 
     /**
@@ -81,6 +48,10 @@ class SliderController extends Controller
      */
     public function destroy(Slider $slider)
     {
-        //
+        $image_path = 'images/slider/' . $slider->url;
+        unlink($image_path);
+        $slider->delete();
+
+        return back();
     }
 }

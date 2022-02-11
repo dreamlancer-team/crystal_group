@@ -18,6 +18,10 @@
     </li>
     
     <li class="nav-item">
+        <a class="nav-link" href="/admin/slider">Slider</a>
+    </li>
+    
+    <li class="nav-item">
         <a class="nav-link" href="/admin/setting">Setting</a>
     </li>
 

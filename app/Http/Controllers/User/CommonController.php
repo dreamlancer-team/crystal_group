@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Models\Slider;
 
 class CommonController extends Controller
 {
@@ -13,6 +14,7 @@ class CommonController extends Controller
      */
     public function index()
     {
-        return view('user.welcome');
+        $sliders = Slider::all();
+        return view('user.welcome', compact('sliders'));
     }
 }
