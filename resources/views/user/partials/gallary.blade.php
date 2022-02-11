@@ -8,7 +8,7 @@
             <div class="carousel-inner">
               @foreach ($sliders as $slider)
                 <div class="carousel-item h-25 @if($loop->first) active @endIf">
-                  <img class="d-block w-100" src="{{ url('storage/slider/' . $slider->url) }}">
+                  <img class="d-block w-100" src="{{ asset('images/slider/' . $slider->url) }}">
                 </div>
               @endforeach
             </div>

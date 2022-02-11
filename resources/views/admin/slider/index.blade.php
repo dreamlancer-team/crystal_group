@@ -22,7 +22,7 @@
                         <tr>
                             <td>{{ $loop->index + 1 }}</td>
                             <td>
-                                <img style="width: 250px; height: 150px;" src="{{ url('storage/slider/' . $slider->url) }}">
+                                <img style="width: 250px; height: 150px;" src="{{ asset('images/slider/' . $slider->url) }}">
                             </td>
                             <td>
                                 <a class="text-red" onclick="event.preventDefault(); document.getElementById('delete-slider-{{ $slider -> id }}').submit();" href="">Delete</a>

@@ -31,13 +31,11 @@ class SliderController extends Controller
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
-        $image = null;
-        if ($request->hasFile('image')) {
-            $request->image->store('slider', 'public');
-            $image = $request->image->hashName();
-        }
+        $imageName = time() . '.' . $request->image->extension();
 
-        Slider::create(['url' => $image]);
+        $request->image->move(public_path('images/slider'), $imageName);
+
+        Slider::create(['url' => $imageName]);
 
         return back();
     }
@@ -50,7 +48,7 @@ class SliderController extends Controller
      */
     public function destroy(Slider $slider)
     {
-        $image_path = public_path() . 'images/slider/' . $slider->url;
+        $image_path = 'images/slider/' . $slider->url;
         unlink($image_path);
         $slider->delete();
 
